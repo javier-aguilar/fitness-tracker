@@ -1,14 +1,7 @@
 body {
     font-family: 'Josefin Sans';
-    background-color: #FFFAFB;
 }
 
-* {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-}
-
-h1 {
-    font-size: 28px;
+.dashboard {
+    display: flex;
 }
