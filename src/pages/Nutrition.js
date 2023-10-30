@@ -4,13 +4,12 @@ import { Box, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
 function Nutrition() {   
 
     return (
-        <Box sx={{ background: '#242829', color: '#e6e6e6', p: 2}}>
+        <Box sx={{ p: 3}}>
         <h1>Nutrition</h1>
         <List>
             <ListItem>
-                <ListItemText primary="Total Calories:" />
+                <ListItemText primary="Total Calories: 0" />
             </ListItem>
-
             <ListItem>
                 <ListItemIcon>
                     <SquareRoundedIcon sx={{color: '#FFF600'}}/>
