@@ -2,17 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import { Stack } from '@mui/material';
 
-import Logo from '../assets/images/Logo.png';
-
 function Navbar() {
   return (
-    <Stack direction ="row" justifyContent="space-around" sx={{ gap: {sm: '122px', xs: '40px'}, mt: { sm: '32px', xs: '20px'}, justifyContent: 'none'}} px="20px">
-        <Link to="/">
-            <img src={Logo} alt="Logo" style={{width: '48px', height: '48px', margin: '0 20px'}} />
-        </Link>
-        <Stack direction = "row" gap = "40px" fontSize = "24px" aLignItems="flex-end">
-            <Link to="/" style={{textDecoration: 'none', color: "#3A1212"}}>Home</Link>
-            <a href="#exercises" style={{textDecoration: 'none', color:'#3A1212'}}> Exercises </a>
+    <Stack sx={{ background: '#f3f3f3', width: '250px', height: '100vh', p: 3, paddingTop: '55px', alignItems: 'center' }} px="20px">
+        <Stack gap = "40px" fontSize = "24px">
+            <Link to="/" style={{textDecoration: 'none', color: "#242829"}}>Overview</Link>
+            <Link to="/nutrition" style={{textDecoration: 'none', color:'#242829'}}> Nutrition </Link>
+            <Link to="/activity" style={{textDecoration: 'none', color:'#242829'}}> Activity </Link>
         </Stack>
     </Stack>
   )
